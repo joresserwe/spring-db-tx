@@ -21,7 +21,7 @@ internal class OrderServiceTest : DescribeSpec() {
 
     init {
         this.describe("결재 예외 테스트") {
-            this.context("결재가 정상적으로 된다면 된다면") {
+            this.context("결재가 정상적으로 된다면") {
                 val order = Order("정상")
                 shouldNotThrowAny { orderService.order(order) }
                 val findOrder = orderRepository.findByIdOrNull(order.id)

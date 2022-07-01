@@ -3,7 +3,7 @@ logging:
     org:
       springframework:
         transaction.interceptor: trace #Proxy ??
-        # jdbc.datasource.DataSourceTransactionManager: debug
+        jdbc.datasource.DataSourceTransactionManager: debug
         orm.jpa.JpaTransactionManager: debug # JPA Log
       hibernate:
         SQL: debug
