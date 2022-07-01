@@ -23,7 +23,7 @@ class RollbackTest : FunSpec() {
 
     init {
         context("Checked/Runtime Exception에 따른 Rollback 확인") {
-            this.test("runtim xception") {
+            this.test("runtime Exception") {
                 shouldThrow<RuntimeException> { service.runtimeException() }
             }
             this.test("checked Exception") {
